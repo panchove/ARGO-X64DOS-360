@@ -34,4 +34,13 @@ Este documento formaliza la transferencia de control u operación de un componen
 - Ver docs/sprints/DOCUMENTOS.md para trazabilidad completa
 - Ver CHANGELOG.md para historial de cambios
 
+## Compacting y Actualización de Documentación Raíz
+- Siempre que se realice una operación de "compacting" (reorganización, archivo o limpieza de artefactos/documentos/logs históricos relevantes), este HANDOFF.md y los documentos raíz afectados (README.md, CHANGELOG.md, VERSIONING.md, etc.) deben ser actualizados.
+- Se debe documentar:
+   - Fecha, responsable y motivo del compacting
+   - Archivos y rutas modificadas, eliminadas o archivadas
+   - Actualización de versiones y enlaces en todos los documentos raíz impactados
+   - Validación/firmas del responsable y, si aplica, de QA/Compliance
+- Todo compacting debe quedar registrado para auditoría, incrementar la versión (al menos PATCH) y reflejarse en el changelog.
+
 **Este handoff queda referenciado para auditoría industrial y como punto de partida de soporte.**

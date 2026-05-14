@@ -6,6 +6,9 @@
 
 Este README es plantilla, referencia y advertencia industrial.
 
+> **Compacting:** Cuando se realice compacting (reorganización, archivado, limpieza de artefactos raíz/logs/documentos), todo documento raíz afectado (incluyendo este README.md) y HANDOFF.md deberán actualizarse para reflejar los cambios y mantener la trazabilidad de auditoría industrial.
+
+
 - Compliance ISO/IEC y auditoría
 - Login/Password obligatorio
 - Drivers sólo .SYS

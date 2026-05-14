@@ -51,6 +51,10 @@ breaking changes) o en arquitectura principal
 - Plantillas y checklists deberán referenciar la versión en su primer sección o pie de página.
 - Si cambia la estructura/criterio de una plantilla que impacte QA/auditoría, agregar una nota de versión y update en CHANGELOG.md.
 
+## Compacting y versionado/documentación raíz
+- Cuando se realice compacting (reorganización, archivado, deduplicación, etc.) que afecte artefactos/documentos clave, todos los documentos raíz y HANDOFF.md deben actualizarse y versionarse acorde.
+- Cualquier cambio debe quedar trazado en CHANGELOG.md y en el historial del repo con incremento al menos PATCH o MINOR.
+
 ## Referencias
 
 - Este archivo debe enlazarse desde CONTRIBUTING.md y CHANGELOG.md para visibilidad total.

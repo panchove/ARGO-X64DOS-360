@@ -34,3 +34,5 @@ Este documento establece las reglas de gobernanza, toma de decisiones y estructu
 - Si no hay consenso, decide el Dueño de Sprint; si afecta compliance, prima QA/Compliance
 
 **La documentación y logs de decisiones deben archivarse junto con el sprint correspondiente para trazabilidad y auditoría externa.**
+
+> **Compacting:** Siempre que decisiones o acciones de gobernanza requieran reorganizar, consolidar o archivar artefactos/documentos/logs clave (compacting), los documentos raíz y HANDOFF.md deberán actualizarse y auditarse para reflejar los cambios y mantener la trazabilidad y la gobernanza industrial.
