@@ -8,6 +8,10 @@
 
 ## Bitácora
 
+- 2026-05-16: Cierre sprint-05 (multitarea/userspace). Todas las issues 05-01 a 05-05 EN DONE, QA ARM64 batch y checklist cumplido (ver logs/qa_multitask_arm64.log y docs/ref/CHECKLIST_MT_QA.md). Documentación y checklists en compliance. Paso a auditoría, handoff y README/links.
+
+- 2026-05-16: Abierto sprint-05 (multitarea/userspace). Backlog se industrializa (docs/sprints/sprint-05.md), issues secuenciales 05-01 a 05-06 con QA/checklist y links de evidencia. Métodos, políticas, enlaces, y paths armados de acuerdo a compliance ISO/IEC y flujo industrial X64DOS.
+
 - 2026-05-16: Sprint-04 cerrado. Todos los issues (04-01 a 04-07) en DONE, QA ARM64 validado ([log QA](../logs/qa_vfs_arm64_test.log)), plugin driver e integración industrial plenamente funcional. Checklist QA final y documentación en docs/ref. Tag v0.04.07 creado para este cierre. Resumen de lecciones: delegación modular robusta, extensibilidad inmediata, auditoría automatizable, compliance mantenible. Handoff y evidencia en logs y docs/ref.
 
 - 2026-05-16: Abierto sprint-04. Backlog y issues industrializados ([sprint-04.md](sprint-04.md), issues 04-01 a 04-07) bajo políticas ISO/IEC, checklist QA, con trazabilidad y enlaces completos para auditoría, handoff y evidencia. Cumplimiento actualizado en README y navegación raíz.

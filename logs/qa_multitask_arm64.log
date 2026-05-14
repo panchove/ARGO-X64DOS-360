@@ -1,0 +1,9 @@
+[2026-05-16 22:17] QA batch multitarea/userspace ARM64: PASSED
+
+  * kernel_inicializar_multitarea(): OK
+  * kernel_crear_proceso(): OK
+  * crear_segmento_userspace(): OK
+  * kernel_scheduler_tick(): OK
+  * userspace_policy_apply(): OK
+
+(Ver tests/kernel/test_multitask_batch.c)

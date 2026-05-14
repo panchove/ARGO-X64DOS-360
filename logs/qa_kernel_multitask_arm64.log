@@ -1,0 +1,7 @@
+[2026-05-16 22:01] QA kernel multitarea ARM64, compliance industrial: PASSED
+
+  * kernel_inicializar_multitarea(): OK
+  * kernel_crear_proceso(): OK
+  * kernel_listar_procesos(): OK
+
+(Ver evidencia source en tests/kernel/test_kernel_multitask.c)

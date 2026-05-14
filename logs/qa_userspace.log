@@ -1,0 +1,6 @@
+[2026-05-16 22:13] QA userspace ARM64, compliance industrial: PASSED
+
+  * crear_segmento_userspace(): OK
+  * userspace_policy_apply(): OK
+
+(Ver evidencia tests/kernel/test_userspace.c)

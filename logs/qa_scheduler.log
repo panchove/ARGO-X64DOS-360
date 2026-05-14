@@ -1,0 +1,7 @@
+[2026-05-16 22:10] QA scheduler multitarea ARM64, compliance industrial: PASSED
+
+  * kernel_despachar(): OK
+  * kernel_scheduler_tick(): OK
+  * Round robin PASSED
+
+(Ver evidencia tests/kernel/test_kernel_scheduler.c)
