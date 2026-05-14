@@ -6,6 +6,19 @@
 
 Este proyecto sigue el estándar [SemVer 2.0.0](https://semver.org/lang/es/): MAJOR.MINOR.PATCH
 
+## Convención específica X64DOS: MAJOR.SPRINT.ISSUE
+- **xx**: Versión mayor del sistema (major version, cambios disruptivos)
+- **yy**: Número de sprint (avance organizacional/ciclo)
+- **zz**: Issue asociado (cada entrega relevante se traza a su issue)
+
+**Ejemplo:**
+- `01.03.12` significa versión mayor 1, sprint 3, cambio o entrega por el issue 12.
+
+Política:
+- Todo aumento de `yy` refleja el avance a un nuevo sprint (no se cierra actual hasta todo DONE)
+- Cada fix/actualización relevante va como `zz=issue` correspondiente, indicada en el changelog y la documentación del commit.
+- Los releases y el changelog deben anotar claramente a qué sprint pertenece cada cambio y a qué issue corresponde.
+
 ## Normas para incremento de versión
 
 - **Cambio MAJOR (X.y.z):**

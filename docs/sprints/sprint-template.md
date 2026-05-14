@@ -15,10 +15,15 @@
 
 ## Backlog/Tareas
 
-| #  | Tarea                       | Responsable | Estado     |
-|----|-----------------------------|-------------|------------|
-| 1  |                             |             |            |
-| 2  |                             |             |            |
+> **Nota de versión:** En cada entrega, el segundo campo del versionado corresponde al sprint, el tercero al issue (xx.yy.zz).
+
+| #  | Tarea                       | Responsable | Estado        |
+|----|-----------------------------|-------------|-------------|
+| 1  |                             |             | PENDING     |
+| 2  |                             |             | PENDING     |
+
+> **Política de estados:** Solo se permiten 'PENDING', 'IN-PROGRESS' y 'DONE'.
+> **Política de versiones:** El campo yy es el sprint y zz el número de issue asociado.
 
 ## Issues abiertos relacionados
 

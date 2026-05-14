@@ -37,7 +37,10 @@
 
 ## Estado actual
 
-- [Pendiente / En progreso / Cerrado]
+- [PENDING / IN-PROGRESS / DONE]
+
+> **Política de estados:** Solo se permiten 'PENDING', 'IN-PROGRESS' y 'DONE'.
+> **Política de versiones:** En la referencia xx.yy.zz, yy corresponde al sprint y zz al número de issue asociado.
 
 ## Responsable asignado
 

@@ -16,10 +16,16 @@
 - Reglas de negocio cubiertas: [RB-A], [RB-B]
 
 ## Backlog/Tareas
-| #  | Tarea                       | Responsable | Estado     | Trazabilidad          |
-|----|-----------------------------|-------------|------------|-----------------------|
-| 1  |                             |             |            | [SRN-X], [RB-A]       |
-| 2  |                             |             |            | [SRN-Y], [RB-B]       |
+
+> **Nota de versión:** En cada entrega, el segundo campo del versionado corresponde al sprint, el tercero al issue (xx.yy.zz).
+
+| #  | Tarea                       | Responsable | Estado        | Trazabilidad          |
+|----|-----------------------------|-------------|-------------|-----------------------|
+| 1  |                             |             | PENDING     | [SRN-X], [RB-A]       |
+| 2  |                             |             | PENDING     | [SRN-Y], [RB-B]       |
+
+> **Política de estados:** Solo se permiten 'PENDING', 'IN-PROGRESS' y 'DONE'.
+> **Política de versiones:** El campo yy es el sprint y zz el número de issue asociado.
 
 ## Issues abiertos relacionados
 - [issue-XXX](issues/issue-XXX.md): [Resumen]

@@ -18,3 +18,8 @@ Resumen del flujo de trabajo para cada sprint industrial:
 4. Auditoría:
     - Archivar entregables/documentos.
     - Validar segregación de logs, evidencia y roles en OWNER_REGISTER.md.
+
+## Política de Estados para Sprint/Issues
+- Solo se permiten los estados: 'PENDING', 'IN-PROGRESS' y 'DONE'.
+- Toda tarea o issue debe reflejar uno de estos tres estados en el backlog o en la documentación.
+- **No se puede iniciar un nuevo sprint hasta que todas las tareas/issues del sprint actual estén en estado DONE.**

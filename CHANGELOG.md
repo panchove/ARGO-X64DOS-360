@@ -4,7 +4,7 @@
 > **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
 
 
-> **Versionado:** Consulta las reglas en [VERSIONING.md](VERSIONING.md)
+> **Versionado:** xx.yy.zz — yy es el número de sprint, zz el número de issue asociado. Consulta las reglas completas en [VERSIONING.md](VERSIONING.md)
 
 Todas las modificaciones mayores y menores en este proyecto serán documentadas aquí, siguiendo el estándar Keep a Changelog.
 
