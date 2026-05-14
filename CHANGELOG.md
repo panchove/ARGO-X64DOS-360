@@ -1,10 +1,12 @@
+
 # CHANGELOG - X64DOS
+
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
 > **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
 
-
 > **Versionado:** xx.yy.zz — yy es el número de sprint, zz el número de issue asociado. Consulta las reglas completas en [VERSIONING.md](VERSIONING.md)
+
 
 Todas las modificaciones mayores y menores en este proyecto serán documentadas aquí, siguiendo el estándar Keep a Changelog.
 

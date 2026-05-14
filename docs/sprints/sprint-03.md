@@ -1,37 +1,48 @@
-# Sprint 03 - Integración, Despliegue y Monitoreo
-> **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
-> **Documento versionado y auditado.**  
-> **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
+
+# Sprint 03 - Inicio de Codificación y Desarrollo
+
+> **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001
+> **Documento versionado y auditado.**
+> **Revisión:** 2026-05-15, **Responsable:** Equipo X64DOS
 
 
-**Fechas:** 2026-05-29 a 2026-06-12  
-**Scrum Master:** Carmen León  
-**Equipo:** Juan Pérez, Pablo Ruiz, Daniela V.
+**Fechas:** 2026-05-16 a 2026-05-30
+**Scrum Master:** Por asignar
+**Equipo:** Por asignar
 
 ## Objetivos
-- Automatizar despliegue industrial (Makefile/DEPLOYMENT)
-- Implementar monitoreo y batch de respaldo
-- Pruebas integración MultiFS y drivers .SYS
+- Comenzar codificación real en módulos clave: automatización, scripting, integración drivers
+- Implementar bridge Lua-INT21 y scripting batch
+- Generar drivers .SYS demostrativos (MultiFS, logging, example)
+- Crear y validar Makefile industrial con tests y targets de despliegue
+- QA automatizado: test suites para scripts y drivers (Lua, batch)
+- Definir y cumplir pruebas unitarias e implementación según estándar ([ver política de pruebas](../../04-Pruebas-STD.md))
+- Documentación técnica de los módulos y APIs principales en /docs/ref/
 
 ## Backlog/Tareas
-| #  | Tarea                               | Responsable | Estado    |
-|----|-------------------------------------|-------------|-----------|
-| 1  | Automatizar DEPLOYMENT + Makefile   | Juan        | Pendiente |
-| 2  | Script batch monitoreo/disco        | Daniela     | Pendiente |
-| 3  | Integración drivers SYS MultiFS     | Pablo       | Pendiente |
-| 4  | Pruebas integración full pipeline   | Carmen      | Pendiente |
 
-## Issues abiertos relacionados
-- [issue-003](issues/issue-003.md): Bug pipeline despliegue
-- [issue-004](issues/issue-004.md): Requerimiento monitoreo batch
+| #  | Tarea                               | Responsable   | Estado     | Issue/link                          |
+|----|-------------------------------------|--------------|------------|-------------------------------------|
+| 03-01 | Implementar esqueleto driver .SYS        | Por asignar  | PENDING    | [sprint-03-issue-01](issues/sprint-03-issue-01.md) |
+| 03-02 | Bridge Lua ↔ INT21-64 (scripting)        | Por asignar  | PENDING    | [sprint-03-issue-02](issues/sprint-03-issue-02.md) |
+| 03-03 | Batch industrial monitoreo ejemplo       | Por asignar  | PENDING    | [sprint-03-issue-03](issues/sprint-03-issue-03.md) |
+| 03-04 | Makefile y CI tests integrados           | Por asignar  | PENDING    | [sprint-03-issue-04](issues/sprint-03-issue-04.md) |
+| 03-05 | QA: test suite scripting y drivers       | Por asignar  | PENDING    | [sprint-03-issue-05](issues/sprint-03-issue-05.md) |
+| 03-06 | Documentar APIs y módulos nuevos         | Por asignar  | PENDING    | [sprint-03-issue-06](issues/sprint-03-issue-06.md) |
 
-## Criterios de cierre
-- Scripts y automatismos QA pasan pruebas de integración end-to-end
-- Nueva política de monitoreo registrada/documentada
-- Pipeline de despliegue validado y auditado
+> **Política de estados:** Solo se permiten 'PENDING', 'IN-PROGRESS' y 'DONE'.
+> **Política de versiones:** El campo yy es el sprint y zz el número de issue asociado.
 
-## Checklist de cumplimiento
-- [ ] Tests integración y despliegue OK
-- [ ] Checklist de cierre completado
-- [ ] Documentación actualizada
-- [ ] Issues cerrados
+## Issues técnicos a abrir
+- Uno por cada tarea de backlog, enlazados aquí y con evidencias mínimas de avance/código
+
+## Issues adicionales legacy
+- [sprint-03-issue-07](issues/sprint-03-issue-07.md): Bug en pipeline de despliegue (Makefile/DEPLOYMENT) _(7/8, legacy)_
+- [sprint-03-issue-08](issues/sprint-03-issue-08.md): Requerimiento: batch de monitoreo periódico industrial _(8/8, legacy)_
+
+## Checklist de inicio
+- [ ] Responsables asignados
+- [ ] Issues técnicos abiertos y enlazados
+- [ ] Primer código/documento validado por QA
+- [ ] Compliance declarado y versionado
+- [ ] Pruebas unitarias e implementación verificadas ([ver criterio y ejemplos](../../04-Pruebas-STD.md))

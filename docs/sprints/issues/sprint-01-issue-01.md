@@ -1,8 +1,11 @@
-# Issue #001
+
+# Sprint 01 Issue 01
+
+> **Orden en sprint: 1/1**
+>
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
 > **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
-
 
 - **Título:** Error de permisos en log de auditoría (root)
 - **Fecha:** 2026-05-02

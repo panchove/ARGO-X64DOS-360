@@ -7,10 +7,30 @@ LUAFLAGS = -llua5.4
 SRC := $(wildcard kernel/*.c tools/*.c drivers/fuentes/*.c)
 OBJ := $(SRC:.c=.o)
 
-all: $(TARGET)
+all: $(TARGET) drivers/exampledev.sys drivers/exampledev_test tools/bridge_int21_64.so tools/bridge_int21_64_test
 
 $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -o $@ $^ $(LUAFLAGS)
+
+drivers/exampledev.sys: drivers/exampledev.c
+	$(CC) $(CFLAGS) -c -o drivers/exampledev.sys drivers/exampledev.c
+
+drivers/exampledev_test: drivers/exampledev.c
+	$(CC) $(CFLAGS) -static -DUNIT_TEST -o drivers/exampledev_test drivers/exampledev.c
+
+tools/bridge_int21_64.so: tools/bridge_int21_64.c
+	$(CC) $(CFLAGS) -fPIC -shared -o tools/bridge_int21_64.so tools/bridge_int21_64.c
+
+tools/bridge_int21_64_test: tools/bridge_int21_64.c
+	$(CC) $(CFLAGS) -static -DUNIT_TEST -o tools/bridge_int21_64_test tools/bridge_int21_64.c
+
+test: drivers/exampledev_test tools/bridge_int21_64_test
+	@echo '==> QA drivers/exampledev_test'
+	qemu-aarch64 drivers/exampledev_test
+	@echo
+	@echo '==> QA tools/bridge_int21_64_test'
+	qemu-aarch64 tools/bridge_int21_64_test
+	@echo '\n==> Todos los tests ejecutados. Verifica evidencia en logs/'
 
 clean:
 	rm -f $(OBJ) $(TARGET)

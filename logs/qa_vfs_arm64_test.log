@@ -1,0 +1,13 @@
+[example_driver] mkdir: A:/TEST (mode=0)
+[QA] vfs_mkdir (A:/TEST)                      : OK
+[example_driver] list: A:/
+[QA] vfs_list (A:/)                           : OK
+[QA] list output:
+EVIDENCIA-A.TXT
+EVIDENCIA-B.LOG
+EXTRA/
+
+[example_driver] rm: A:/TEST
+[QA] vfs_rm (A:/TEST)                         : OK
+[example_driver] stat: A:/EVIDENCIA-A.TXT
+[QA] vfs_stat (A:/EVIDENCIA-A.TXT)            : OK

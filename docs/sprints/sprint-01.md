@@ -25,7 +25,7 @@
 
 ## Issues abiertos relacionados
 
-- [issue-001](issues/issue-001.md): Error permisos log/auditoría root
+- [sprint-01-issue-01](issues/sprint-01-issue-01.md): Error permisos log/auditoría root _(1/1)_
 
 ## Criterios de cierre
 

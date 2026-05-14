@@ -1,0 +1,13 @@
+aarch64-linux-gnu-gcc -Wall -O2 -std=c99 -static -DUNIT_TEST -o tools/bridge_int21_64_test tools/bridge_int21_64.c
+==> QA drivers/exampledev_test
+qemu-aarch64 drivers/exampledev_test
+[exampledev] Init OK
+[exampledev] Lectura ficticia, len=8
+AA AA AA AA AA AA AA AA 
+
+==> QA tools/bridge_int21_64_test
+qemu-aarch64 tools/bridge_int21_64_test
+[bridge] Recibido: SYS_PRINT
+[bridge] INT21-64: Print ejemplo desde Lua
+[bridge] Recibido: NOP
+\n==> Todos los tests ejecutados. Verifica evidencia en logs/

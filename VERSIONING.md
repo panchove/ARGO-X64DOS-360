@@ -1,10 +1,12 @@
+
 # VERSIONING - Reglas de versionado X64DOS
+
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
 > **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
 
-
 Este proyecto sigue el estándar [SemVer 2.0.0](https://semver.org/lang/es/): MAJOR.MINOR.PATCH
+
 
 ## Convención específica X64DOS: MAJOR.SPRINT.ISSUE
 - **xx**: Versión mayor del sistema (major version, cambios disruptivos)

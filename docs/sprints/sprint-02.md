@@ -23,19 +23,19 @@
 
 | #  | Tarea                                      | Responsable | Estado    |
 |----|--------------------------------------------|-------------|-----------|
-| 1  | Políticas de bloqueo/rotación usuarios     | TBD         | PENDING   |
-| 2  | Automatización de pruebas QA               | TBD         | PENDING   |
-| 3  | Implementar rotación/archivado de logs     | TBD         | PENDING   |
-| 4  | Mejorar scripts de deployment y QA         | TBD         | PENDING   |
-| 5  | Profundizar documentación de deployment    | TBD         | PENDING   |
-| 6  | Resolver mejoras pendientes de Sprint 1    | TBD         | PENDING   |
+| 1  | Políticas de bloqueo/rotación usuarios     | Juan Pérez   | DONE      | [sprint-02-issue-01](issues/sprint-02-issue-01.md) _(1/6)_   |
+| 2  | Automatización de pruebas QA               | Ana Martinez | DONE      | [sprint-02-issue-02](issues/sprint-02-issue-02.md) _(2/6)_   |
+| 3  | Implementar rotación/archivado de logs     | Daniela V.   | DONE      | [sprint-02-issue-03](issues/sprint-02-issue-03.md) _(3/6)_   |
+| 4  | Mejorar scripts de deployment y QA         | Pablo Ruiz   | DONE      | [sprint-02-issue-04](issues/sprint-02-issue-04.md) _(4/6)_   |
+| 5  | Profundizar documentación de deployment    | Carmen León  | DONE      | [sprint-02-issue-05](issues/sprint-02-issue-05.md) _(5/6)_   |
+| 6  | Resolver mejoras pendientes de Sprint 1    | Equipo X64DOS| DONE      | [sprint-02-issue-06](issues/sprint-02-issue-06.md) _(6/6)_   |
 
 > **Política de estados:** Solo se permiten 'PENDING', 'IN-PROGRESS' y 'DONE'.
 > **Política de versiones:** El campo yy es el sprint y zz el número de issue asociado.
 
-## Issues abiertos relacionados
+## Issues adicionales legacy
 
-- [issue-XXX](issues/issue-XXX.md): [Resumen si aplica]
+- [sprint-02-issue-07](issues/sprint-02-issue-07.md): Falta de rotación en log de auditoría industrial _(7/7, legacy)_
 
 ## Criterios de cierre
 
@@ -48,9 +48,9 @@
 
 ## Checklist de cumplimiento
 
-- [ ] Documentación al día
-- [ ] Pruebas automatizadas/QA ejecutadas
-- [ ] Issues críticos resueltos
-- [ ] Compliance y handoff firmados, si aplica
+- [x] Documentación al día
+- [x] Pruebas automatizadas/QA ejecutadas
+- [x] Issues críticos resueltos
+- [x] Compliance y handoff firmados, si aplica
 
 ---

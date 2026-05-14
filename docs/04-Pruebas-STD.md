@@ -10,9 +10,37 @@ Se describen los principales casos y planes de prueba para X64DOS.
 
 ## 2. Tipos de Prueba
 
-- Pruebas unitarias del núcleo y drivers
-- Pruebas de integración del shell, comandos, multitarea
-- Pruebas de regresión y stress
+- **Pruebas unitarias** del núcleo, librerías, scripts y drivers: cada función/módulo se valida de forma aislada, automatizada y con evidencia de resultado. Obligatorias en todo código fuente nuevo y en refactors críticos. Resultado: OK/FAIL, logs automatizados, errores con traza.
+- **Pruebas de implementación/integración**: verifican interacción entre módulos, APIs o capas (ej: kernel+drivers+VFS; shell+INT21-64; batch-SYS). Se ejecutan en entornos de staging/QEMU por responsables de QA y desarrollo. Requieren checklist, logs de ejecución, y evidencia de funcionamiento transversal.
+- Pruebas de regresión y stress: garantizan que cambios no rompen funcionalidades previas; incluyen escenarios automáticos y uso intensivo.
+
+### 2.1 Definición y Política
+
+#### Pruebas unitarias
+- Objetivo: Validar funciones/síntesis mínima de una pieza de código aislada (C/híbrido/Lua/batch)
+- Criterios: Salida esperada, casos límite, errores controlados
+- Ejemplo: test de sum(), batch de inicialización, driver de disco .SYS simulando I/O
+- Formato esperado: script `test_<modulo>.sh`, LuaTest, C test-main, batch `test.bat`, salida estandarizada LOG/OK/FAIL
+- Evidencia: Log por cada prueba, resultado visible/archivado, debe poder ejecutarse automáticamente
+- Ejemplo tabla:
+
+| Prueba                  | Módulo         | Entrada      | Esperado    | Resultado | Evidencia          |
+|-------------------------|----------------|--------------|-------------|-----------|--------------------|
+| Suma simple int         | math.c         | 2+2          | 4           | OK        | logs/test_math.out |
+| Login exitoso           | login.lua      | user/pwd     | Login Ok    | OK        | logs/test_login.out|
+
+#### Pruebas de implementación/integración
+- Objetivo: Validar funcionamiento conjunto de módulos, flujo real usuario/SO
+- Criterios: Interacción, paso de datos, errores entre componentes
+- Ejemplo: login+shell+batch; driver + VFS + script; pipeline batch
+- Formato esperado: test-runner, batch encadenado, script QA, prueba manual guiada + check
+- Evidencia: logs QEMU/simulación, screenshots, archivos generados
+- Ejemplo tabla:
+
+| Prueba                       | Componentes              | Flujo               | Esperado           | Evidencia                |
+|------------------------------|--------------------------|---------------------|--------------------|--------------------------|
+| Login + Shell + Batch        | login, shell, batch.bat  | Sesión completa     | batch output OK    | bashlog, screen, output  |
+| Driver .SYS + VFS + boot     | dskdrv.sys, vfs, kernel  | Boot + mount + ls   | listado real       | qemu-log, disk.img       |
 
 ## 3. Pruebas Relevantes
 

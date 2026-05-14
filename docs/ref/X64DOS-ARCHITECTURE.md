@@ -1,10 +1,12 @@
+
 # X64DOS - Arquitectura Industrial y Compliance
+
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
 > **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
 
-
 ## Resumen
+
 
 Este documento es la referencia central para la arquitectura, organización, diagramas visuales, convenciones security, scripting, drivers y políticas multiusuario/industrial en X64DOS.
 

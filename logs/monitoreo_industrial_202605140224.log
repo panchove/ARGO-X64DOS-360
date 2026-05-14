@@ -1,0 +1,17 @@
+# MONITOREO INDUSTRIAL X64DOS - jue 14 may 2026 02:24:05 -04
+Hostname: ironman
+Kernel:   Linux ironman 6.19.14-2-liquorix-amd64 #1 ZEN SMP PREEMPT liquorix 6.19-12~mx25ahs (2026-05-04) x86_64 GNU/Linux
+
+--- Chequeo driver exampledev (simulado) ---
+[exampledev] Init OK
+[exampledev] Lectura ficticia, len=8
+AA AA AA AA AA AA AA AA 
+
+--- Chequeo bridge Lua ↔ C (simulado) ---
+[Warning] LuaJIT/tests no disponibles o módulo bridge no localizado.
+
+--- Métricas runtime: demos industrial ---
+CPU:   model name	: Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+Uptime:  02:24:05 up 13:03,  1 user,  load average: 0,59, 0,59, 0,56
+Fecha: 2026-05-14
+# FIN DE MONITOREO --- QA Industrial
