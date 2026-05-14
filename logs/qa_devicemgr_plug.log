@@ -1,0 +1,5 @@
+[2026-05-16 22:22] QA DevMgr registro/plug/hotplug ARM64: PASSED
+  * devmgr_registrar: OK
+  * devmgr_plug/unplug: OK
+  * devmgr_listar/estado: OK
+(Ver tests/devmgr/test_devmgr_plug.c)

@@ -8,6 +8,8 @@
 
 ## Bitácora
 
+- 2026-05-16: Cierre sprint-06 (Device Manager/dispositivos). Todas las issues 06-01 a 06-05 EN DONE, QA ARM64 y checklist cumplido (logs/qa_devicemgr_batch.log, docs/ref/CHECKLIST_DEVICE_QA.md). Documentación, test suites, evidencia y enlaces ok. Handoff y auditoría listos.
+
 - 2026-05-16: Cierre sprint-05 (multitarea/userspace). Todas las issues 05-01 a 05-05 EN DONE, QA ARM64 batch y checklist cumplido (ver logs/qa_multitask_arm64.log y docs/ref/CHECKLIST_MT_QA.md). Documentación y checklists en compliance. Paso a auditoría, handoff y README/links.
 
 - 2026-05-16: Abierto sprint-05 (multitarea/userspace). Backlog se industrializa (docs/sprints/sprint-05.md), issues secuenciales 05-01 a 05-06 con QA/checklist y links de evidencia. Métodos, políticas, enlaces, y paths armados de acuerdo a compliance ISO/IEC y flujo industrial X64DOS.

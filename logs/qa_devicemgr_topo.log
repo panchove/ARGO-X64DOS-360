@@ -1,0 +1,5 @@
+[2026-05-16 22:20] QA device manager/topología ARM64: PASSED
+  * devmgr_init(): OK
+  * devmgr_registrar(): OK
+  * devmgr_listar(): OK
+(Ver tests/devmgr/test_devmgr_topo.c)

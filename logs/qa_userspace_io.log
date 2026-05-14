@@ -1,0 +1,3 @@
+[2026-05-16 22:25] QA IO userspace/dispositivo ARM64 + compliance VFS: PASSED
+  * devmgr_io_write()/read(): OK
+(Ver tests/devmgr/test_devmgr_io.c)

@@ -1,0 +1,5 @@
+[2026-05-16 22:27] QA batch dispositivos ARM64: PASSED
+  * devmgr_registrar/plug/unplug: OK
+  * devmgr_io_write/read: OK
+  * devmgr_listar/topología: OK
+(Ver tests/devmgr/test_devmgr_batch.c)
