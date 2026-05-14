@@ -1,9 +1,13 @@
-
 # X64DOS - Compliance Industrial y Estructura
+> **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.
+> **Documento versionado y auditado.**
+> **Revisión:** 2026-05-15, **Responsable:** Equipo X64DOS
 
-> **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
-> **Documento versionado y auditado.**  
-> **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
+## Documentación de gobierno
+
+- [OWNER_REGISTER.md](./OWNER_REGISTER.md)
+- [docs/COMPACTING-POLICY.md](./docs/COMPACTING-POLICY.md)
+- [docs/sprints/README.md](./docs/sprints/README.md)
 
 Este README es plantilla, referencia y advertencia industrial.
 

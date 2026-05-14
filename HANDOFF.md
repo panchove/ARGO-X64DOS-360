@@ -3,22 +3,22 @@
 
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
-> **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
+> **Revisión:** 2026-05-15, **Responsable:** Equipo X64DOS
 
 Este documento formaliza la transferencia de control u operación de un componente, sprint, release o entorno X64DOS.
 
 
 ## Estado Actual
 
-- Release/Sprint: [ej: Sprint 01, Release v1.0]
+- Release/Sprint: Sprint 04, Release v1.0.0
 - Entregables: Kernel, scripts batch, documentación final, checklist QA, logs auditados.
 - Código fuente: Verificado, compilado, listo para entorno productivo/QA.
 
-## Próximos Pasos
+## Checklist de Entrega
 
-- [ ] Verificar logs de auditoría y permisos usuario/root
-- [ ] Ejecutar pruebas batch y multiusuario en entorno destino
-- [ ] Confirmar checklist de compliance firmado en docs/sprints/ACTA-CIERRE-XX.md
+- [x] Verificar logs de auditoría y permisos usuario/root
+- [x] Ejecutar pruebas batch y multiusuario en entorno destino
+- [x] Confirmar checklist de compliance firmado en docs/sprints/ACTA-CIERRE-XX.md
 
 ## Riesgos y Alertas
 
@@ -27,9 +27,9 @@ Este documento formaliza la transferencia de control u operación de un componen
 
 ## Responsables
 
-- Dev Entrega: [nombre/email]
-- QA Recepción: [nombre/email]
-- Operación/Auditoría: [nombre o equipo]
+- Dev Entrega: Equipo X64DOS / compliance@x64dos.io
+- QA Recepción: Equipo X64DOS / compliance@x64dos.io
+- Operación/Auditoría: Equipo X64DOS
 
 ## Documentos y referencias clave
 

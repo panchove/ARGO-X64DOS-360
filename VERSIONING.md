@@ -1,25 +1,40 @@
 
-# VERSIONING - Reglas de versionado X64DOS
+# VERSIONING - X64DOS
 
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
-> **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
+> **Revisión:** 2026-05-15, **Responsable:** Equipo X64DOS
 
-Este proyecto sigue el estándar [SemVer 2.0.0](https://semver.org/lang/es/): MAJOR.MINOR.PATCH
+## Doble esquema de versionado
 
+A partir del release v1.0.0, X64DOS adopta dos esquemas de versionado complementarios:
 
-## Convención específica X64DOS: MAJOR.SPRINT.ISSUE
-- **xx**: Versión mayor del sistema (major version, cambios disruptivos)
-- **yy**: Número de sprint (avance organizacional/ciclo)
-- **zz**: Issue asociado (cada entrega relevante se traza a su issue)
+- **SemVer externo**: v1.0.0, v1.0.1, etc.  
+  Usado para releases públicos, entrega a cliente y etiquetas en el repositorio.
 
-**Ejemplo:**
-- `01.03.12` significa versión mayor 1, sprint 3, cambio o entrega por el issue 12.
+- **Esquema correlativo interno**: MAJOR.SPRINT.ISSUE (ejemplo: 01.04.00)  
+  Donde:
+  - MAJOR: Versión mayor del producto (solo si TODOS los sprints/issues del ciclo están en DONE y validados)
+  - SPRINT: Sprint donde se realizan cambios agregados
+  - ISSUE: Número principal de issue asociado al cambio
 
-Política:
-- Todo aumento de `yy` refleja el avance a un nuevo sprint (no se cierra actual hasta todo DONE)
-- Cada fix/actualización relevante va como `zz=issue` correspondiente, indicada en el changelog y la documentación del commit.
-- Los releases y el changelog deben anotar claramente a qué sprint pertenece cada cambio y a qué issue corresponde.
+### Tabla de conversión de versiones
+
+| SemVer   | Correlativo interno | Descripción breve                           | Estado de sprints/issues |
+|----------|---------------------|---------------------------------------------|--------------------------|
+| v1.0.0   | 01.04.00            | Release estable base, Sprints 01-04 cerrados| 100% DONE               |
+| v1.0.1   | 01.05.00            | Fix documental, ajuste compliance           | 100% DONE               |
+| v1.x.x   | --                  | (No permitido, hay sprints/issues abiertos) | Pendientes              |
+
+---
+
+## REGLA BLOQUEANTE
+
+**No se puede publicar un release mayor mientras existan sprints o issues abiertos/pendientes de QA o Compliance.**  
+Esto es obligatorio para mantener compliance normativo y trazabilidad.
+
+Toda documentación debe referenciar ambos esquemas para maximizar trazabilidad y cumplimiento normativo.  
+Para más detalles, ver [CHANGELOG.md](./CHANGELOG.md).
 
 ## Normas para incremento de versión
 

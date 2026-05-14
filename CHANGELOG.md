@@ -3,10 +3,16 @@
 
 > **Cumplimiento:** ISO/IEC 12207, 25010, 15504, 27001, 9001.  
 > **Documento versionado y auditado.**  
-> **Revisión:** 2026-05-14, **Responsable:** Equipo X64DOS
+> **Revisión:** 2026-05-15, **Responsable:** Equipo X64DOS
 
-> **Versionado:** xx.yy.zz — yy es el número de sprint, zz el número de issue asociado. Consulta las reglas completas en [VERSIONING.md](VERSIONING.md)
+## Tabla de Correspondencia Release ↔ Sprint/Issue
 
+| Release  | Sprints Cubiertos      | Issues principales | Estado de cierre |
+|----------|-----------------------|--------------------|------------------|
+| v1.0.0   | Sprint 01, 02, 03, 04 | Issue-001, 002, 003| Cerrado/final    |
+
+> **NOTA:** Solo puede emitirse un release mayor (v1.0.0, v1.1.0, etc.) cuando todos los sprints e issues del ciclo correspondiente estén en estado DONE y validados por QA y Compliance.  
+> No se permite indexar un release mayor con entregables pendientes.
 
 Todas las modificaciones mayores y menores en este proyecto serán documentadas aquí, siguiendo el estándar Keep a Changelog.
 
@@ -14,25 +20,26 @@ Todas las modificaciones mayores y menores en este proyecto serán documentadas 
 
 - Cambios pendientes de merge o próximos a release.
 
-## [v1.0.0] - 2026-05-14
+## [v1.0.0] - 2026-05-15
 
-### Añadido
+**Correspondencia:** Sprint 01, 02, 03, 04 | Issues: 001, 002, 003 (todos cerrados y validados por QA/Compliance)
 
+### Añadido [Sprint-01][Issue-001]
 - Arquitectura industrial inicial y política multiusuario.
+
+### Añadido [Sprint-02][Issue-002]
 - Logger y logs audit trail seguro multiusuario.
-- Makefile con target QEMU run y batchs de prueba industrial.
-- Esquemas industriales para scripts/config/Makefile.
-- Documentación completa sprints/issues (sistema CMMI/ISO/IEC).
-- Policies de segregación root/usuario, compliance login y scripting Lua seguro.
 
-### Corregido
+### Mejoras [Sprint-03][Issue-003]
+- Adición de políticas de compliance y estructura de OWNER_REGISTER.md.
 
-- Permisos y acceso multiusuario a logs (
-issue-001).
+### Mejoras [Sprint-04][Issue-004]
+- Regularización de documentación base, alineando CHANGELOG.md, HANDOFF.md, README.md.
 
-### Cambiado
+---
 
-- Ajustes integración bridge Lua-C, review batch y templates.
+## [PRÓXIMO RELEASE] (**No programar hasta cierre total de sprints/issues**)
+> Los releases mayores sucesivos (v1.1.0, v2.0.0…) sólo podrán ser generados cuando toda la documentación, QA y compliance esté completa y firmada.
 
 ## [v0.1.0] - 2026-05-01
 
