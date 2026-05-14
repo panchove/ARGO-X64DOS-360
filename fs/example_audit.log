@@ -1,0 +1,8 @@
+2026-05-14T10:03:22Z,LOGIN,juan,Exito
+2026-05-14T10:04:01Z,SUDO,juan,Intento escalar privilegios: Denegado
+2026-05-14T10:05:47Z,SCRIPT,juan,Backup terminado (files=23,size=12MB,ok)
+2026-05-14T10:09:05Z,LOGOUT,juan,Desconexion correcta
+2026-05-14T11:10:22Z,LOGIN,root,Exito
+2026-05-14T11:10:42Z,BRIDGE,root,Puente Lua-C Daemon iniciado (PID=1021)
+2026-05-14T11:12:40Z,BATCH,juan,Failed: Permiso denegado en /root
+2026-05-14T11:13:55Z,LUA,juan,Ejecucion lua_bridge: Copia segura OK

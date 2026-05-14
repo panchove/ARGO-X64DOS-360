@@ -1,0 +1,14 @@
+; Layout típico volumen FAT32 ejemplo industrial
+[BootSector]
+OEMName=X64DOS  
+BytesPerSector=512
+SectorsPerCluster=8
+ReservedSectors=32
+NumFATs=2
+RootEntries=512
+
+[FS_Info]
+TotalSectors=65536
+FATSize=256
+RootDirSectors=32
+RootCluster=2
